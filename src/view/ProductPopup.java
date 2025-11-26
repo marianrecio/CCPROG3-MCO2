@@ -48,7 +48,7 @@ public class ProductPopup {
             Button choose = new Button("Add");
             choose.setOnAction(e -> {
                 if (shopper.addProduct(p)) {
-                    display.getProducts().remove(p);
+                    display.removeProduct(p);
                     onUpdate.run();
                     stage.close();
                 }
