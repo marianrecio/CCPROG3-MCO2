@@ -1,3 +1,5 @@
+package model;
+
 public class Exit implements Amenity {
     public void interact(Shopper s, Supermarket m) {
         System.out.println("Exiting...");
