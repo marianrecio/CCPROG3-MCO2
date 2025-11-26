@@ -269,3 +269,11 @@ public void searchProduct(Shopper shopper) {
 
     public List<Display> getAllDisplays() { return allDisplays; }
 }
+
+public Amenity[][] getCurrentFloor() {
+    return onGroundFloor ? groundFloor : secondFloor;
+}
+
+public boolean isOnGroundFloor() {
+    return onGroundFloor;
+}
