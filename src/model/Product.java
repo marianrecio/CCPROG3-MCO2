@@ -1,4 +1,4 @@
-abstract class Product {
+public abstract class Product {
     private String serialNumber;
     private String name;
     private double price;
