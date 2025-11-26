@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Service implements Amenity {
     protected String name;
 
