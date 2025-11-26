@@ -1,12 +1,12 @@
 package controller;
 
-import javafx.scene.canvas.Canvas;
+import javafx.application.Platform;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-
 import model.*;
-import view.SupermarketView;
+import view.InventoryPopup;
 import view.ProductPopup;
+import view.SupermarketView;
 
 public class SupermarketSimulatorController {
 
@@ -28,11 +28,23 @@ public class SupermarketSimulatorController {
     }
 
     private void attachEventHandlers() {
-        // Keyboard events → movement & turning
+
         view.getRoot().setOnKeyPressed(this::handleKey);
 
-        // Mouse click → interact with amenity
         view.getCanvas().setOnMouseClicked(this::handleMouse);
+
+        view.getBtnInventory().setOnAction(e ->
+                new InventoryPopup(shopper).show()
+        );
+
+        view.getBtnSwitchFloor().setOnAction(e -> {
+            market.switchFloor();
+            redraw();
+        });
+
+        view.getBtnQuit().setOnAction(e ->
+                Platform.exit()
+        );
     }
 
     private void handleKey(KeyEvent e) {
@@ -49,7 +61,8 @@ public class SupermarketSimulatorController {
 
             case SPACE -> {
                 Amenity a = market.getAmenityInFront(shopper);
-                if (a != null) a.interact(shopper, market);
+                if (a != null)
+                    a.interact(shopper, market);
             }
         }
         redraw();
@@ -64,9 +77,8 @@ public class SupermarketSimulatorController {
         Amenity[][] floor = market.getCurrentFloor();
         Amenity clicked = floor[row][col];
 
-        if (clicked instanceof Table table) {
-            // Show product popup
-            new ProductPopup(table, shopper, this::redraw).show();
+        if (clicked instanceof Display display) {
+            new ProductPopup(display, shopper, this::redraw).show();
         }
     }
 
