@@ -69,18 +69,21 @@ public class SupermarketSimulatorController {
     }
 
     private void handleMouse(MouseEvent e) {
-        int tileSize = view.getTileSize();
+    int tileSize = view.getTileSize();
 
-        int col = (int)(e.getX() / tileSize);
-        int row = (int)(e.getY() / tileSize);
+    int col = (int)(e.getX() / tileSize);
+    int row = (int)(e.getY() / tileSize);
 
-        Amenity[][] floor = market.getCurrentFloor();
-        Amenity clicked = floor[row][col];
+    if (row < 0 || row >= 22 || col < 0 || col >= 22)
+        return;
 
-        if (clicked instanceof Display display) {
-            new ProductPopup(display, shopper, this::redraw).show();
-        }
+    Amenity[][] floor = market.getCurrentFloor();
+    Amenity clicked = floor[row][col];
+
+    if (clicked instanceof Display display) {
+        new ProductPopup(display, shopper, this::redraw).show();
     }
+}
 
     public void redraw() {
         view.drawMap(market, shopper);
