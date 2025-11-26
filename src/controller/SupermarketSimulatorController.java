@@ -7,6 +7,7 @@ import model.*;
 import view.InventoryPopup;
 import view.ProductPopup;
 import view.SupermarketView;
+import model.Amenity;
 
 public class SupermarketSimulatorController {
 
