@@ -1,3 +1,5 @@
+package model;
+
 public class Shopper {
     private String name;
     private int age;
