@@ -274,8 +274,8 @@ public void searchProduct(Shopper shopper) {
     public Amenity[][] getCurrentFloor() {
     return onGroundFloor ? groundFloor : secondFloor;
     }
-}
 
-public boolean isOnGroundFloor() {
+    public boolean isOnGroundFloor() {
     return onGroundFloor;
+    }
 }
