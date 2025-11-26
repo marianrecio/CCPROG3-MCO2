@@ -1,3 +1,5 @@
+package model;
+
 public class Table extends Display {
     public Table(Address address, ProductType type) {
         super(address, type, 4); // ex capacity of 4 products per table
