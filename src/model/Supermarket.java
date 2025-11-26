@@ -1,5 +1,9 @@
 package model;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Supermarket {
     private final int ROWS = 22, COLS = 22;
     private Amenity[][] groundFloor = new Amenity[ROWS][COLS];
