@@ -1,3 +1,5 @@
+package model;
+
 public class Address {
     private String floor;    
     private String group;    
