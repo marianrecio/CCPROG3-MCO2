@@ -31,4 +31,9 @@ public abstract class Display implements Amenity {
     public boolean isPassable() {
         return true;
     }
+
+    public void removeProduct(Product p) {
+    products.remove(p);
+    }
 }
+
