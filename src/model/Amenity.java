@@ -1,6 +1,6 @@
 package model;
 
-public class Amenity interface Amenity {
+public interface Amenity {
     void interact(Shopper shopper, Supermarket market);
     char getSymbol();
     boolean isPassable();
