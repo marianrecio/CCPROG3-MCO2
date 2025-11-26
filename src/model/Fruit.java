@@ -1,3 +1,5 @@
+package model;
+
 public class Fruit extends Product {
     public Fruit(String s, String n, double p) {
         super(n, p, ProductType.FRUIT);
