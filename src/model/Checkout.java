@@ -1,3 +1,5 @@
+package model;
+
 public class Checkout extends Service {
 
     public Checkout() {
