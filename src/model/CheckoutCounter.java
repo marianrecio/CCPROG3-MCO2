@@ -1,3 +1,5 @@
+package model;
+
 public class CheckoutCounter implements Amenity {
     private Checkout checkout = new Checkout();
 
