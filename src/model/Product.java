@@ -1,5 +1,9 @@
 package model;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
+
 public abstract class Product {
     private String serialNumber;
     private String name;
