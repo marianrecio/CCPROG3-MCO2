@@ -1,0 +1,7 @@
+public class Alcohol extends Product {
+    public Alcohol(String s, String n, double p) {
+        super(n, p, ProductType.ALCOHOL);
+    }
+
+    // discounts, override..
+}
