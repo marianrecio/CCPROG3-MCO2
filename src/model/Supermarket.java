@@ -61,8 +61,8 @@ public class Supermarket {
     }
 
     // Stairs
-    groundFloor[15][1] = new StairAmenity();
-    groundFloor[15][20] = new StairAmenity();
+    groundFloor[15][1] = new Stair();
+    groundFloor[15][20] = new Stair();
 
     // Product Search
     groundFloor[15][8] = new ProductSearchStation();
@@ -136,8 +136,8 @@ public class Supermarket {
    }
 
   // Stairs
-  secondFloor[15][1] = new StairAmenity();
-  secondFloor[15][20] = new StairAmenity();
+  secondFloor[15][1] = new Stair();
+  secondFloor[15][20] = new Stair();
 
   // Middle walls 
   for (int r = 16; r <= 17; r++) {
