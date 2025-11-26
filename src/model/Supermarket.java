@@ -28,9 +28,9 @@ public class Supermarket {
         }
 
     // Refrigerators
-    for (int i = 2; i <= 6; i++) groundFloor[1][i] = new RefrigeratorAmenity();
-    for (int i = 9; i <= 13; i++) groundFloor[1][i] = new RefrigeratorAmenity();
-    for (int i = 15; i <= 21; i++) groundFloor[1][i] = new RefrigeratorAmenity();
+    for (int i = 2; i <= 6; i++) groundFloor[1][i] = new Refrigerator();
+    for (int i = 9; i <= 13; i++) groundFloor[1][i] = new Refrigerator();
+    for (int i = 15; i <= 21; i++) groundFloor[1][i] = new Refrigerator();
 
     // Shelves
     int[][] shelfRows = {{4,7},{10,13}};
@@ -98,13 +98,13 @@ public class Supermarket {
   // Basket, Refrigerators, Cart
   secondFloor[1][1] = new BasketStation(); 
   for (int i = 3; i <= 6; i++) {
-      secondFloor[1][i] = new RefrigeratorAmenity();
+      secondFloor[1][i] = new Refrigerator();
   }
   for (int i = 9; i <= 12; i++) {
-      secondFloor[1][i] = new RefrigeratorAmenity();
+      secondFloor[1][i] = new Refrigerator();
   }
   for (int i = 15; i <= 18; i++) {
-    secondFloor[1][i] = new RefrigeratorAmenity();
+    secondFloor[1][i] = new Refrigerator();
   }
   secondFloor[1][20] = new CartStation(); 
 
@@ -115,7 +115,7 @@ public class Supermarket {
       for (int r = rowRange[0]; r <= rowRange[1]; r++) {
           for (int[] colRange : shelfCols) {
               for (int c = colRange[0]; c <= colRange[1]; c++)
-                  secondFloor[r][c] = new ShelfAmenity();
+                  secondFloor[r][c] = new Shelf();
           }
       }
   }
