@@ -257,7 +257,7 @@ public boolean isPassable(int row, int col) {
   public void checkout(Shopper shopper) {
       Amenity a = getAmenityInFront(shopper);
       if (a instanceof CheckoutCounter) {
-          ystem.out.println("Proceeding to checkout...");
+          System.out.println("Proceeding to checkout...");
       }
       else {
          System.out.println("Move in front of a checkout counter first.");
