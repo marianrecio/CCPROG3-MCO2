@@ -1,3 +1,5 @@
+package model;
+
 public class Stair implements Amenity {
     public void interact(Shopper s, Supermarket m) {
         System.out.println("Using stairs...");
