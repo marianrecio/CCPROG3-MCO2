@@ -36,3 +36,4 @@ public class Address {
                group.equals(other.group);
     }
 }
+
