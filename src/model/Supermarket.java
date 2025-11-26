@@ -39,7 +39,7 @@ public class Supermarket {
         for (int r = rowRange[0]; r <= rowRange[1]; r++) {
             for (int[] colRange : shelfCols) {
                 for (int c = colRange[0]; c <= colRange[1]; c++)
-                    groundFloor[r][c] = new ShelfAmenity();
+                    groundFloor[r][c] = new Shelf();
             }
         }
     }
