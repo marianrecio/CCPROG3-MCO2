@@ -1,5 +1,8 @@
 package model;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public abstract class Equipment {
     protected int capacity;
     protected List<Product> items = new ArrayList<>();
