@@ -1,3 +1,5 @@
+package model;
+
 public class Supermarket {
     private final int ROWS = 22, COLS = 22;
     private Amenity[][] groundFloor = new Amenity[ROWS][COLS];
