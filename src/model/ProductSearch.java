@@ -1,5 +1,8 @@
 package model;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class ProductSearch extends Service {
     private List<Display> displays;
 
