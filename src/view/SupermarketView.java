@@ -90,7 +90,7 @@ public class SupermarketView {
                         case 'B' -> gc.setFill(Color.PINK);        // Basket station
                         case 'U' -> gc.setFill(Color.YELLOW);      // Stairs
                         case 'P' -> gc.setFill(Color.PURPLE);      // Product search
-                        case 'W' -> gc.setFill(Color.BLACK);       // Wall (if implemented)
+                        case '+' -> gc.setFill(Color.BLACK);       // Wall (if implemented)
                         default -> gc.setFill(Color.LIGHTGRAY);
                     }
                     gc.fillRect(x, y, tileSize, tileSize);
