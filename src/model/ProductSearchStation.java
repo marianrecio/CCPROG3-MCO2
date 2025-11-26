@@ -1,3 +1,5 @@
+package model;
+
 public class ProductSearchStation implements Amenity {
     public void interact(Shopper s, Supermarket m) {
         m.searchProduct(s);
