@@ -1,3 +1,3 @@
 public enum ProductType {
-    FRUIT, ALCOHOL
+    FRUIT, ALCOHOL, // will add more
 }
