@@ -1,5 +1,9 @@
 package model;
 
+import java.util.List;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Checkout extends Service {
 
     public Checkout() {
