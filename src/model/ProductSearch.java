@@ -1,3 +1,5 @@
+package model;
+
 public class ProductSearch extends Service {
     private List<Display> displays;
 
