@@ -3,5 +3,13 @@ public class Alcohol extends Product {
         super(n, p, ProductType.ALCOHOL);
     }
 
-    // discounts, override..
+    @Override
+    public String generateSerialNumber() {
+        String serialNumber = "";
+
+        serialNumber += "ALC";
+        serialNumber += super.generateSerialNumber();
+
+        return serialNumber;
+    }
 }
