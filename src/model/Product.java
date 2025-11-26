@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Product {
     private String serialNumber;
     private String name;
